@@ -15,7 +15,7 @@
     --fs-buttons:hsla(232, 17%, 35%, 1);
     --bc-buttons:hsla(312, 91%, 96%, 1);
 
-    font-size: 62.5%; /*liberado o usa da medidas em rem*/
+    font-size: 62.5%; 
 }
 
 .page{
@@ -73,6 +73,8 @@ main p{
 
     padding: 0 32px;
 
+    animation-name: animationImage;
+    animation-duration: 1s;
 }
 
 .card h2{
@@ -93,4 +95,33 @@ main p{
     font-size: 20px;
     font-weight: 400;
     color:#4A4E69;
+
+    animation-name: animationButtons;
+    animation-duration: 1s;
+}
+
+@keyframes animationImage{
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes animationButtons{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    } 
 }
